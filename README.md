@@ -2,6 +2,13 @@
 
 Forbides `this.browser.saveScreenshot()`. Useful for WebdriverIO and Hermione.
 
+## install
+
+```
+npm i eslint-plugin-no-savescreenshot
+```
+
+
 Add to your `eslintrc`:
 ```
 {
