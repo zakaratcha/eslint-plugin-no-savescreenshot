@@ -1,0 +1,55 @@
+{
+  "name": "eslint-plugin-no-savescreenshot",
+  "version": "1.0.0",
+  "description": "Forbides '.saveScreenshot()'",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "test": "jest",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "files": [
+    "README.md",
+    "package.json",
+    "lib"
+  ],
+  "keywords": [
+    "eslint",
+    "webdriverio",
+    "hermione",
+    "saveScreenshot"
+  ],
+  "author": "zakaratcha",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/eslint": "^4.16.6",
+    "@types/node": "^11.13.4",
+    "@typescript-eslint/parser": "^1.6.0",
+    "eslint": "^5.16.0",
+    "jest": "^24.7.1",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "typescript": "~3.4.3"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "eslint": "^4.0.0 || ^5.0.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "(src/.*\\.test)\\.ts$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "\\.d\\.ts$",
+      "lib/.*"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "json"
+    ]
+  }
+}
